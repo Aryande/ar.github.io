@@ -1,0 +1,42 @@
+<style type="text/css">
+body{
+width: 100%;
+background: #blue;
+} #tampil img{
+display: inline-block;
+margin-left: 5px;
+height: 200px;
+width: 200px;
+} #tampil button{
+border-radius: 30px;
+height: 30px;
+width: 100px;
+}#tampil input{
+margin-left: 20px;
+}#tes {
+float: left;
+font-size: 23px;
+color: gold;
+padding-top: 0px;
+margin-left: 20px;
+}#tes:hover { cursor: pointer; }
+.nav{
+width: 100px;
+height: 30px;
+display: inline-block;
+margin-left: 10px;
+text-align: center;
+}.nav hr{
+height: 2px; background: #blue;
+}.nav:hover, button{ cursor: pointer; }
+.nav button{
+border: none; background-color: white;
+}.footer{
+width: 80%;
+margin-left: 7%;
+margin-top: -17px;
+height: 70px;
+background: blue;
+text-align: center;
+}
+</style>

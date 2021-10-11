@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Website</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body >
+<center></center>
+<div class="container">
+<div class="header">
+<ul>
+<center>
+<h1 style="background:blue;border: 3px dashed black;padding: 10px;">SELAMAT DATANG</h1>
+</center>
+</ul>
+</div>
+<div class="nav">
+<button onclick="showPage(1)"><h3 style="margin-bottom: 2px;" >HOME</h3></button>
+<hr>
+</div>
+<div class="nav">
+<button onclick="showPage(2)"><h3 style="margin-bottom: 2px;">ABOUT</h3></button>
+<hr>
+</div>
+<div class="nav">
+<button onclick="showPage(3)"><h3 style="margin-bottom: 2px;">LOGIN</h3></button>
+<hr>
+</div>
+<div id="tampil" style="margin-left: 20px; margin-top: 20px; display: block;" ></div>
+</div>
+</center>
+<script type="text/javascript">
+function showPage(page){
+var div = document.getElementById('tampil');
+var isi = '';
+if(page==1){
+isi+='<h3 style="text-align:center;">Artikel</h3>';
+for(var a=0; a<1; a++){
+isi+="<h4> Artikel "+(a+1)+" </h4>";
+isi+='<p>Pantai mananga Aba dengan bentangan pasir putih meluas menghiasai sepanjang bibir pantai, menjadi salah satu favorit tujuan wisata masyarakat Sumba Barat Daya khususnya, wisatawandomestik hingga manca negara.Gulungan ombak yang tinggi menambah daya tarik tersendiri bagi peselancarmenghabiskan waktu berolahraga.Air laut dan pantainya yang bersih serta jauh dari permukiman pendudukmenyajikan suasana tenang, damai dan nyaman bagi pengunjung menghabiskan waktu bersama keluarga setelahseminggu menggeluti rutinitas masing-masing.</p>';
+}
+for(var a=0; a<1; a++){
+isi+="<h4> Artikel "+(a+2)+" </h4>";
+isi+='<p>Bukit Lendongara menawarkan landscape perbukitan dengan latar belakang laut.Area perbukitan hijau begitu menyejukkan mata, plus udara segar dan alami serasa berada di atas awan. Tempat inisangat cocok untuk spot foto terbaik, terutama saat matahari hendak kembali ke peraduannya. Bukit yang miripdengan bukit teletubies ini masuk dalam wilayah Desa Karuni, Kecamatan Loura.</p>';
+}
+for(var a=0; a<1; a++){
+isi+="<h4> Artikel "+(a+3)+" </h4>";
+isi+='<p>Danau Weekuri yang berwarna hijau kebiru-biruan ini merupakan danau yangsangatlah unik jika dibandingkan dengan danau-danau pada umumnya di Indonesia karena kandungan airnya yangasin dan payau. Kenapa asin? Karena sebenarnya danau ini adalah sebuah laguna yang terbentuk dari air lautanlepas yang berada di kisaran danau. Air tersebut masuk dari celah-celah bebatuan yang berada di gugusan karang sekitaran danau.</p>';
+}
+}else if(page==2){
+isi+='<center>';
+isi+='<h1> Profil Saya<h1>';
+isi+='<img src="aryan.jpeg">';
+isi+='</center>';
+isi+='<center>';
+isi+='<label for="username">Nama</label> : ';
+isi+='<input type="text" id="username" value="Ariyanto dendo"> <br><br>';
+isi+='<label for="username">Nim </label> : ';
+isi+='<input type="text" id="username" value="205410078"> <br><br>';
+isi+='<label for="username">jurusan </label> : ';
+isi+='<input type="text" id="username" value="S1 teknik informatika"> <br><br>';
+isi+='</center>';
+} else if(page==3) {
+isi+='<center>';
+isi+='<label for="username">Username</label> : ';
+isi+='<input type="text" id="username" value="Aryan"> <br><br>';
+isi+='<label for="password">Password</label> :'
+isi+='<input type="password" id="password" value="april"><br><br>';
+isi+='<button >Login</button>';
+isi+='</center>'
+}
+div.innerHTML = isi;
+}
+</script>
+</body>
+</html>
